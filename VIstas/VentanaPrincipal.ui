@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>649</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="conexion_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>601</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>PISTA SELECCIONADA</string>
+    </property>
+    <widget class="QLabel" name="lblCancion">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>23</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TITULO CANCION SELECCCIONADA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnGrabar">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>20</y>
+       <width>119</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>GRABAR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCancelar">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>50</y>
+       <width>119</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CANCELAR</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="conexion_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>611</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SCORE</string>
+    </property>
+    <widget class="QPlainTextEdit" name="txtArea">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>23</y>
+       <width>371</width>
+       <height>188</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="txtMetricas">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>23</y>
+       <width>211</width>
+       <height>188</height>
+      </rect>
+     </property>
+     <property name="plainText">
+      <string>Canción predecida:
+Métrica 1:
+Métrica 2:
+Métrica 3:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="conexion_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>611</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>CANCIONES DISPONIBLES</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QWidget" name="widget_3" native="true">
+       <widget class="QTableWidget" name="tblCanciones">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>441</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>TITULO</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ARTISTA</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>DURACION</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>Mucho tiempo</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>KIdd Keo</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="btnSeleccionar">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>0</y>
+          <width>119</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SELECCIONAR</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
