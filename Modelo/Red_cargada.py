@@ -43,6 +43,9 @@ def evaluar_cancion(ruta):
     # Apply softmax to the logits to get probabilities
     ps = F.softmax(logits, dim=1)
     print(ps)
+
+    promedio = torch.mean(ps, dim=0)
+    print(promedio)
     # Get the probabilities for each class
     probs = ps.detach().numpy()[0]
 
