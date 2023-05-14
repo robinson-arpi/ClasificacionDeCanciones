@@ -42,12 +42,10 @@ def evaluar_cancion(ruta):
 
     # Apply softmax to the logits to get probabilities
     ps = F.softmax(logits, dim=1)
-    print(ps)
-
     promedio = torch.mean(ps, dim=0)
     print(promedio)
     # Get the probabilities for each class
-    probs = ps.detach().numpy()[0]
+    probs = promedio.detach().numpy()
 
     # Create a bar chart of the probabilities
     fig, ax = plt.subplots()
@@ -59,3 +57,4 @@ def evaluar_cancion(ruta):
     plt.show()
 
 evaluar_cancion(ruta_absoluta + "\\Testing\\Me voy a olvidar_robinson.mp3" )    
+evaluar_cancion(ruta_absoluta + "\\Testing\\Por las noches_prueba.mp3" )    
